@@ -355,4 +355,23 @@ main {
 
 /*opholdOversigt starter*/
 
+/*card til ophold oversigt*/
+
+.CardOphold {
+    background-color: var(--LightBeige);
+    border-radius: 15px;
+}
+
+#h2HoldOversigt {
+    text-align: center;
+}
+
+.CardOphold img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
 /*opholdOversigt slutter*/
