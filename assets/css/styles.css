@@ -240,7 +240,34 @@ main {
     min-width: 75px;
     margin-top: var(--LargeSpacing);
 }
+/* værdier sektion slut */
 
+/* vores team sektion start */
+.TeamMemberContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 15rem;
+}
+
+.titleBold {
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: var(--smallSpacing);
+}
+
+.navn {
+    font-size: 24px;
+}
+
+.teamPic img {
+    border-radius: 200px;
+    max-height: 10em;
+    margin-bottom: var(--smallSpacing);
+}
+/* vores team sektion slut */
 
 
 
