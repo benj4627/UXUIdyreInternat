@@ -353,6 +353,9 @@ main {
 
 /* forside slut */
 
+
+
+
 /*opholdOversigt starter*/
 
 /*card til ophold oversigt*/
@@ -364,9 +367,10 @@ main {
 
 #h2HoldOversigt {
     text-align: center;
+    padding-bottom: 35px;
 }
 
-.CardOphold img {
+.CardOpholdImg {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     height: 300px;
@@ -378,6 +382,20 @@ main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
+    text-align: center;
 }
+
+.CardOpholdH3 {
+    padding-inline: 20px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    text-align: left;
+}
+
+.CardOpholdP {
+    padding-inline: 20px;
+    text-align: left;
+}
+
 
 /*opholdOversigt slutter*/
