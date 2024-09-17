@@ -1,3 +1,24 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+/* variables */
+:root {
+    --LargeSpacing: 3rem;
+    --smallSpacing: 1rem;
+    --borderRadius: 0.4rem;
+    --boxShadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.20);
+    --gradientBackground: linear-gradient(357deg, #F9ECC9 59.21%, #D0DCAE 78.13%);
+    --LightOrange: #FA8637;
+    --DarkOrange: #C66828;
+    --PrimaryLightGreen: #A9B489;
+    --lightGreen: #D0DCAE;
+    --PrimaryDarkGreen: #5E7153;
+    --DarkBeige: #F9ECC9;
+    --LightBeige: #FFF8E6; 
+    --black: #1F1E1E;
+    --white: #FFFBF8;
+}
+
 /* reset template */
 * {
     box-sizing: border-box;
@@ -8,6 +29,9 @@
 
 body {
     min-height: 100vh;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 18px;
+    line-height: 1.5rem;
 }
 
 a {
@@ -22,13 +46,32 @@ h5,
 h6 {
     text-wrap: balance;
     font-weight: normal;
+    line-height: 150%;
 }
 
-p {
-    text-wrap: pretty; 
+h1 {
+    font-family: "Anton", sans-serif;
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+h2 {
+    font-family: "Anton", sans-serif;
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+h3 {
+    font-family: "Anton", sans-serif;
+    font-size: 2.3rem;
+    font-weight: 400;
+}
+
+p { 
     max-width: 75ch;
     margin-bottom: 2rem;
     line-height: 1.5rem;
+    font-family: "Source Sans 3", sans-serif;
 }
 
 img,
