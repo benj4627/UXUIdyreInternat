@@ -117,13 +117,13 @@ main {
     height: 450px;
     transform: rotate(-6deg);
     position: relative;
-    top: 120px;
+    top: 130px;
     right: 170px;
 }
 
 .heroImgContainer img {
     position: absolute;
-    top: -100px;
+    top: -120px;
     left: 35px;
     padding-top: var(--LargeSpacing);
 }
