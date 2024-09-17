@@ -5,9 +5,9 @@
 :root {
     --LargeSpacing: 3rem;
     --smallSpacing: 1rem;
-    --borderRadius: 0.4rem;
+    --borderRadius: 4rem;
     --boxShadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.20);
-    --gradientBackground: linear-gradient(357deg, #F9ECC9 59.21%, #D0DCAE 78.13%);
+    --gradientBackground: linear-gradient(365deg, #F9ECC9 29.21%, #D0DCAE 88.13%);
     --LightOrange: #FA8637;
     --DarkOrange: #C66828;
     --PrimaryLightGreen: #A9B489;
@@ -95,15 +95,76 @@ main {
     max-width: 1440px;
     margin: 0 auto;
 }
+
 #heroTitle {
     font-size: 5.5rem;
-    max-width: 55rem;
+    width: 55rem;
 }
 
 .heroText {
     font-size: 1.5rem;
-    max-width: 37ch;
+    width: 37ch;
     line-height: 150%;
+    text-wrap: wrap;
 }
+
+.heroTextContainer {
+    white-space: nowrap;
+}
+
+.heroImgContainer{
+    width: 625px;
+    height: 450px;
+    transform: rotate(-6deg);
+    position: relative;
+    top: 120px;
+    right: 170px;
+}
+
+.heroImgContainer img {
+    position: absolute;
+    top: -100px;
+    left: 35px;
+    padding-top: var(--LargeSpacing);
+}
+
+.heroSectionContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* button styling */
+.heroBtnContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+}
+.buttonOneOrange {
+    background: var(--LightOrange);
+    border: 4px solid #FA8637;
+    border-radius: var(--borderRadius);
+    padding: .7rem 3rem;
+    color: white;
+    font-weight: 700;
+    font-size: 1.4rem;
+    letter-spacing: .1rem;
+    transition: .3s ease-in-out;
+}
+
+.buttonOneOrange a {
+    color: white;
+    font-weight: 700;
+    font-size: 1.4rem;
+    letter-spacing: .1rem;
+}
+
+.buttonOneOrange:hover {
+    border: 4px solid #FA8637;
+    background: #fa853700;
+    color: var(--LightOrange);
+}
+
 
 /* forside slut */
