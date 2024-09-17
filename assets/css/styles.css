@@ -282,6 +282,7 @@ main {
     justify-content: space-between;
     align-items: center;
     gap: var(--smallSpacing);
+    margin-bottom: 5rem;
 }
 
 .voresTeamTitle {
@@ -314,6 +315,36 @@ main {
     height: 30%;
     z-index: -1;
 }
+/* background shapes slut */
+
+/* focused entry points forside */
+.fep1Indhold {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--LargeSpacing);
+}
+
+.fep1Indhold img {
+    border-radius: 10px;
+    width: 35vw;
+}
+
+.bulletPointsFep {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 2rem; 
+}
+
+.bulletPointsFep li {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    font-weight: 700;
+    margin-right: var(--LargeSpacing);
+}
+
+/* focused entry points forside slut */
 
 
 /* forside slut */
