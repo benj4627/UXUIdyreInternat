@@ -113,12 +113,12 @@ main {
 }
 
 .heroImgContainer{
-    width: 625px;
-    height: 450px;
+    min-width: 625px;
+    min-height: 450px;
     transform: rotate(-6deg);
     position: relative;
     top: 130px;
-    right: 170px;
+    right: 100px;
 }
 
 .heroImgContainer img {
@@ -130,7 +130,7 @@ main {
 
 .heroSectionContainer {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -165,6 +165,83 @@ main {
     background: #fa853700;
     color: var(--LightOrange);
 }
+
+/* værdier sektion */
+.valuesContainer {
+    padding: 10rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.value1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="355" height="368" viewBox="0 0 355 368" fill="none"><path d="M347.695 164.606C381.195 274.606 292 376.606 95.1955 366.606C-17.7483 366.606 1.19527 229.104 1.19527 164.606C1.19527 100.109 71.6953 37.6944 216.695 8.60625C381.195 -24.3937 293.195 39.6063 347.695 164.606Z" fill="%235E7153"/></svg>');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 400px;
+    height: 400px;
+    padding: var(--LargeSpacing);
+}
+
+.value1 img {
+    min-width: 75px;
+    margin-top: var(--LargeSpacing);
+}
+
+.valueTitle h3{
+    margin: 1rem 0
+}
+
+.valueTextContainer {
+    color: var(--white);
+    text-align: center;
+    max-width: 30ch;
+}
+
+.value2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url('data:image/svg+xml,%3Csvg%20xmlns="http://www.w3.org/2000/svg"%20width="356"%20height="367"%20viewBox="0%200%20356%20367"%20fill="none"%3E%3Cpath%20d="M7.72853%20202.311C-25.7715%2092.3107%2052%20-5.89379%20260.228%200.310691C373.172%200.310701%20354.229%20137.813%20354.229%20202.311C354.229%20266.808%20283.729%20329.223%20138.729%20358.311C-25.7715%20391.311%2062.2285%20327.311%207.72853%20202.311Z"%20fill="%235E7153"%2F%3E%3C%2Fsvg%3E');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 400px;
+    height: 400px;
+    padding: var(--LargeSpacing);
+}
+
+.value2 img {
+    min-width: 75px;
+    margin-top: var(--LargeSpacing);
+}
+
+.value3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url('data:image/svg+xml,%3Csvg%20xmlns="http://www.w3.org/2000/svg"%20width="356"%20height="375"%20viewBox="0%200%20356%20375"%20fill="none"%3E%3Cpath%20d="M348.39%20165.213C381.89%20275.213%20293.499%20407.106%2095.8902%20367.213C-20.0005%20343.816%201.88993%20229.71%201.88993%20165.213C1.88993%20100.715%2072.39%2038.3007%20217.39%209.21251C381.89%20-23.7875%20293.89%2040.2125%20348.39%20165.213Z"%20fill="%235E7153"%2F%3E%3C%2Fsvg%3E');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 400px;
+    height: 400px;
+    padding: var(--LargeSpacing);
+}
+
+.value3 img {
+    min-width: 75px;
+    margin-top: var(--LargeSpacing);
+}
+
+
 
 
 /* forside slut */
