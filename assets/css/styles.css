@@ -480,10 +480,12 @@ input {
 .oplysningerSection {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: top;
     background-color: var(--DarkBeige);
     border-radius: 5px;
     box-shadow: var(--boxShadow);
+    width: 73%;
+    height: fit-content;
 }
 
 .buttonChange {
@@ -495,5 +497,61 @@ input {
     text-decoration: underline;
     transform: translate(95px, -10px);
 }
+
+/* lokal nav start */
+.oplysningerContentContainer {
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+    margin-top: var(--LargeSpacing);
+}
+.lokalNavContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem;
+    background: var(--DarkBeige);
+    box-shadow: var(--boxShadow);
+    border-radius: 5px;
+    position: sticky;
+    top: 0;
+    z-index: 9;
+  }
+  
+.lokalNavUL {
+    list-style: none;
+  }
+  
+.lokalNavUL li {
+    margin-bottom: var(--smallSpacing);
+    padding: .5rem 2.5rem;
+    border: none;
+    background: var(--LightBeige);
+    color: var(--LightOrange);
+    transition: .3s ease-in-out;
+    border-radius: 5px;
+    border: 3px solid rgba(0, 0, 0, 0);
+    font-weight: 700;
+}
+
+.lokalNavUL a {
+    color: var(--LightOrange);
+}
+
+.lokalNavUL li:hover{
+    border: 3px solid var(--LightOrange);
+    background: var(--DarkBeige);
+    box-shadow: var(--boxShadow);
+}
+  
+#personalInfoButton {
+    background: var(--LightOrange);
+    color: white;
+    border: none;
+    transition: .2s ease-in-out;
+  }
+  
+  
+  /* lokal nav slut */
 
 /* personline oplysninger slut */
