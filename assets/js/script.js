@@ -1,4 +1,5 @@
 //fanger de relevante HTML elementer
+const parallaxImage = document.querySelector('.heroImgContainer img');
 let visibleAnimEl = document.querySelectorAll(".voresTeamContainerTop, .voresTeamContainerBottom");
 //Sætter en værdi for hvor langt man scroller før function aktiverer. 
 let scrollThreshold = 800;
@@ -17,3 +18,14 @@ function toggleClassScroll() {
 };
 //kalder function når siden loader, for at tjekke scroll position
 toggleClassScroll();
+
+
+//tilføjer eventListner som lytter efter scroll-begivenheden.
+window.addEventListener('scroll', function() {
+  // fanger scroll positionen, og giver det til det valgte HTML element
+  let scrollPosition = window.scrollY;
+  
+  //flytter img en smule, når brugeren scroller ned. Tildeler CSS styling med translate y og en værdi dertil 
+  parallaxImage.style.transform = 'translateY(' + scrollPosition * 0.25 + 'px)';
+});
+
