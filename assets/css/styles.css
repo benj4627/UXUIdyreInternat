@@ -330,6 +330,31 @@ main {
     height: 30%;
     z-index: -1;
 }
+
+.backgroundShapes3 {
+    background-image: url('data:image/svg+xml,%3Csvg xmlns%3D%22http%3A//www.w3.org/2000/svg%22 width%3D%22578%22 height%3D%22378%22 viewBox%3D%220 0 578 378%22 fill%3D%22none%22%3E%3Cpath d%3D%22M571.776 86.5327C615.325 204.077 420.478 127.577 276.324 180.985C132.171 234.393 -23.0958 461.248 -66.6453 343.704C-110.195 226.16 -96.521 95.8389 47.6325 42.4307C191.786 -10.9774 528.226 -31.0114 571.776 86.5327Z%22 fill%3D%22%23D0DCAE%22/%3E%3C/svg%3E');
+    background-repeat: no-repeat;
+    background-size: contain ;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 35%;
+    height: 30%;
+    z-index: -1;
+
+}
+
+.backgroundShapes4 {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22585%22%20height%3D%22353%22%20viewBox%3D%220%200%20585%20353%22%20fill%3D%22none%22%3E%0A%3Cpath%20d%3D%22M683.355%20306.576C661.772%20430.056%20531.977%20265.827%20380.544%20239.358C229.111%20212.888%20-19.2853%20330.659%202.29834%20207.179C23.8819%2083.6989%20101.336%20-21.9965%20252.769%204.47318C404.202%2030.9428%20704.939%20183.096%20683.355%20306.576Z%22%20fill%3D%22%23D0DCAE%22%2F%3E%0A%3C%2Fsvg%3E");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 70%;
+    right: 0;
+    width: 32%;
+    height: 30%;
+    z-index: -1;
+}
 /* background shapes slut */
 
 /* focused entry points forside */
@@ -477,10 +502,12 @@ input {
     padding-top: var(--LargeSpacing);
 }
 
-.oplysningerSection {
+.oplysningerTopContainer {
     display: flex;
     justify-content: space-between;
     align-items: top;
+}
+.oplysningerSection {
     background-color: var(--DarkBeige);
     border-radius: 5px;
     box-shadow: var(--boxShadow);
@@ -490,6 +517,11 @@ input {
 
 .buttonChange {
     transform: translate(30px, -20px);
+    transition: .3s ease-in-out;
+}
+
+.buttonChange:hover {
+    background-color: var(--DarkBeige);
 }
 
 .sletProfil {
@@ -549,9 +581,55 @@ input {
     color: white;
     border: none;
     transition: .2s ease-in-out;
-  }
+}
   
-  
-  /* lokal nav slut */
+/* lokal nav slut */
+/* mine dyr */
+.mineDyrContainer .formContainer {
+    display: flex;
+    align-items: center;
+    gap: var(--smallSpacing);
+    margin-top: -2rem;
+    padding-top: unset;
+    padding-bottom: unset;
+}
+
+.mineDyrTitle {
+    margin-left: var(--LargeSpacing);
+}
+
+.mineDyrContainer svg {
+    max-width: unset;
+}
+
+.dyrPic{
+    position: relative;
+    margin-top: 5rem;
+}
+
+.dyrPic img {
+    position: absolute;
+    top: -70px;
+    left: 10px;
+    padding-top: var(--LargeSpacing);
+}
+
+.buttonDyr {
+    transform: translate(-15px, -20px);
+    transition: .3s ease-in-out;
+    padding: .2rem 2rem;
+}
+
+.buttonDyr:hover {
+    background-color: var(--DarkBeige);
+}
+
+.sletDyr {
+    font-size: 14px;
+    text-decoration: underline;
+    transform: translate(25px,-10px);
+}
+
+/* mine dyr slut */
 
 /* personline oplysninger slut */
