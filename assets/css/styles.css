@@ -327,7 +327,7 @@ main {
 
 .fep1Indhold img {
     border-radius: 10px;
-    width: 35vw;
+    width: 42vw;
 }
 
 .bulletPointsFep {
@@ -343,8 +343,36 @@ main {
     font-weight: 700;
     margin-right: var(--LargeSpacing);
 }
-
 /* focused entry points forside slut */
+
+/* navigation */
+header {
+    max-width: 1340px;
+    margin: 0 auto;
+}
+
+.navContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--smallSpacing);
+    background-color: var(--lightGreen);
+    padding: 2rem 0;
+    
+}
+
+.navList ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.navList li, a {
+    list-style-type: none;
+    color: var(--black);
+    font-weight: 700;
+}
 
 
 /* forside slut */
