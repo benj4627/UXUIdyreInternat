@@ -378,6 +378,7 @@ main {
     border-radius: 15px;
     margin-bottom: var(--LargeSpacing);
     padding-bottom: var(--smallSpacing);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 
 }
 
@@ -413,9 +414,20 @@ main {
     text-align: left;
 }
 
-.HjerteIcon:hover {
-    background: var(--LightOrange);
 
+.typeAfOphold {
+
+    background-image: url(/assets/images/Ellipse\ 20-kopi.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: var(--LargeSpacing);
+    width: auto;
+}
+
+.typeAfOphold p {
+    font-weight: bold;
+    color: var(--PrimaryLightGreen);
 }
 
 /*opholdOversigt slutter*/
