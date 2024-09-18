@@ -1,8 +1,11 @@
 //fanger de relevante HTML elementer
-const parallaxImage = document.querySelector('.heroImgContainer img');
+let parallaxImage = document.querySelector('.heroImgContainer img');
 let visibleAnimEl = document.querySelectorAll(".voresTeamContainerTop, .voresTeamContainerBottom");
+let visibleSlideAnimEl = document.querySelectorAll(".lokalNavSection, .oplysningerSection");
+
 //Sætter en værdi for hvor langt man scroller før function aktiverer. 
-let scrollThreshold = 550;
+let scrollThreshold = 300;
+
 
 function toggleClassScroll() {
   //tilføjer eventListnere som lytter efter scroll-begivenheden. Når brugeren scroller siden, udføres funktionen.
@@ -29,3 +32,15 @@ window.addEventListener('scroll', function() {
   parallaxImage.style.transform = 'translateY(' + scrollPosition * 0.25 + 'px)';
 });
 
+//function der tildeler active class til de valgte elementer
+function delayedAnimation() {
+    // Set a timeout to add the class after a delay (e.g., 500ms) Bruger forEach loop til at sætte et delay på 200ms, inden aktiv class tildeles til de valgte elementer
+    setTimeout(() => {
+      visibleSlideAnimEl.forEach(container => {
+        container.classList.add("animationVisibleUp");
+      });
+    }, 150);
+  }
+  
+  // Kalder funktionen når siden loades
+  delayedAnimation();

@@ -294,13 +294,31 @@ main {
     margin-bottom: var(--LargeSpacing);
 }
 
+/* animationer */
 .slideinAnim {
     opacity: 0; 
     transition: opacity .5s ease-in-out, transform .5s ease-in-out; 
     transform: translateY(100%); 
 }
   
-  .animationVisible {
+.animationVisible {
+    opacity: 1; 
+    transform: translateY(0); 
+}
+
+.slideSideX {
+    opacity: 0; 
+    transition: opacity .5s ease-in-out, transform .5s ease-in-out; 
+    transform: translateX(100%); 
+}
+
+.slideSideY {
+    opacity: 0; 
+    transition: opacity .5s ease-in-out, transform .5s ease-in-out; 
+    transform: translateY(100%); 
+}
+  
+  .animationVisibleUp {
     opacity: 1; 
     transform: translateY(0); 
   }
@@ -482,12 +500,20 @@ input {
     font-size: 1rem;
     color: rgb(136, 134, 134);
     padding: 5px;
-  }
+}
   
 .editIcon {
     font-size: 1.2rem;
     margin-right: .3rem;
-  }
+}
+
+.editIcon svg {
+    transition: .3s ease-in-out;
+}
+
+.editIcon svg:hover {
+    transform: scale(120%);
+}
 
 .profilePic{
     position: relative;
@@ -600,6 +626,11 @@ input {
 
 .mineDyrContainer svg {
     max-width: unset;
+    transition: .3s ease-in-out;
+}
+
+.mineDyrContainer svg:hover {
+    transform: scale(120%);
 }
 
 .dyrPic{
