@@ -289,6 +289,17 @@ main {
     text-align: center;
     margin-bottom: var(--LargeSpacing);
 }
+
+.slideinAnim {
+    opacity: 0; 
+    transition: opacity .5s ease-in-out, transform .5s ease-in-out; 
+    transform: translateY(100%); 
+}
+  
+  .animationVisible {
+    opacity: 1; 
+    transform: translateY(0); 
+  }
 /* vores team sektion slut */
 
 /* background shapes */
@@ -328,6 +339,10 @@ main {
 .fep1Indhold img {
     border-radius: 10px;
     width: 42vw;
+}
+
+.fep1Indhold svg {
+    margin-right: .5rem;
 }
 
 .bulletPointsFep {
