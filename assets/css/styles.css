@@ -14,7 +14,7 @@
     --lightGreen: #D0DCAE;
     --PrimaryDarkGreen: #5E7153;
     --DarkBeige: #F9ECC9;
-    --LightBeige: #FFF8E6; 
+    --LightBeige: #FFF8E6;
     --black: #1F1E1E;
     --white: #FFFBF8;
 }
@@ -68,7 +68,7 @@ h3 {
     font-weight: 400;
 }
 
-p { 
+p {
     max-width: 75ch;
     margin-bottom: 2rem;
     line-height: 1.5rem;
@@ -80,8 +80,8 @@ picture,
 svg,
 video {
     max-width: 100%;
-    display: block; 
-    height: auto; 
+    display: block;
+    height: auto;
 }
 
 button,
@@ -112,7 +112,7 @@ main {
     white-space: nowrap;
 }
 
-.heroImgContainer{
+.heroImgContainer {
     min-width: 545px;
     min-height: 450px;
     transform: rotate(-6deg);
@@ -141,6 +141,7 @@ main {
     align-items: center;
     gap: 2rem;
 }
+
 .buttonOneOrange {
     background: var(--LightOrange);
     border: 4px solid #FA8637;
@@ -193,7 +194,7 @@ main {
     margin-top: var(--LargeSpacing);
 }
 
-.valueTitle h3{
+.valueTitle h3 {
     margin: 1rem 0
 }
 
@@ -240,6 +241,7 @@ main {
     min-width: 75px;
     margin-top: var(--LargeSpacing);
 }
+
 /* værdier sektion slut */
 
 /* vores team sektion start */
@@ -289,6 +291,7 @@ main {
     text-align: center;
     margin-bottom: var(--LargeSpacing);
 }
+
 /* vores team sektion slut */
 
 /* background shapes */
@@ -315,6 +318,7 @@ main {
     height: 30%;
     z-index: -1;
 }
+
 /* background shapes slut */
 
 /* focused entry points forside */
@@ -333,7 +337,7 @@ main {
 .bulletPointsFep {
     display: flex;
     justify-content: flex-start;
-    margin-bottom: 2rem; 
+    margin-bottom: 2rem;
 }
 
 .bulletPointsFep li {
@@ -348,3 +352,21 @@ main {
 
 
 /* forside slut */
+
+/*Start på trygt og kærligt ophold*/
+/*hero sektion*/
+.heroImgContainerTrygKærligtOphold {
+    transform: rotate(-6deg);
+    position: relative;
+    top: 130px;
+    right: 100px;
+
+
+}
+
+.heroImgContainerTrygKærligtOphold img {
+    position: absolute;
+    top: -120px;
+    left: 35px;
+    padding-top: var(--LargeSpacing);
+}
