@@ -357,12 +357,28 @@ main {
 
 
 /*opholdOversigt starter*/
+/*Hero sektion*/
+.heroImgContainerOpholdOversigt {
+    position: relative;
+    top: 0px;
+    right: 20px;
+    padding-bottom: var(--LargeSpacing);
+}
+
+.heroImgContainerOpholdOversigt img {
+    position: absolute;
+    top: 0px;
+    left: 35px;
+    padding-top: var(--LargeSpacing);
+}
 
 /*card til ophold oversigt*/
-
 .CardOphold {
     background-color: var(--LightBeige);
     border-radius: 15px;
+    margin-bottom: var(--LargeSpacing);
+    padding-bottom: var(--smallSpacing);
+
 }
 
 #h2HoldOversigt {
@@ -397,5 +413,9 @@ main {
     text-align: left;
 }
 
+.HjerteIcon:hover {
+    background: var(--LightOrange);
+
+}
 
 /*opholdOversigt slutter*/
