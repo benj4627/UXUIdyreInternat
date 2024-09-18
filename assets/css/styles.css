@@ -55,18 +55,21 @@ h1 {
     font-family: "Anton", sans-serif;
     font-size: 4rem;
     font-weight: 400;
+    color: var(--black);
 }
 
 h2 {
     font-family: "Anton", sans-serif;
     font-size: 3rem;
     font-weight: 400;
+    color: var(--black);
 }
 
 h3 {
     font-family: "Anton", sans-serif;
     font-size: 2.3rem;
     font-weight: 400;
+    
 }
 
 p { 
@@ -421,5 +424,65 @@ header {
 .navList svg:hover {
     border-bottom: 3px solid #FA8637;
 }
-
 /* forside slut */
+
+/* personlige oplysninger start */
+.formContainer {
+    width: 35vw;
+    padding: var(--LargeSpacing);
+  }
+  
+.formGroup {
+    margin-bottom: var(--smallSpacing);
+  }
+  
+label {
+    font-weight: bold;
+    margin-bottom: .2rem;
+  }
+  
+.inputContainer {
+    display: flex;
+    align-items: center;
+    background-color: var(--LightBeige);
+    padding: .3rem;
+    border-radius: 5px;
+  }
+  
+input {
+    display: flex;
+    flex: 1;
+    border: none;
+    background-color: var(--LightBeige);
+    font-size: 1rem;
+    color: rgb(136, 134, 134);
+    padding: 5px;
+  }
+  
+.editIcon {
+    font-size: 1.2rem;
+    margin-right: .3rem;
+  }
+
+.profilePic{
+    transform: rotate(-6deg);
+    position: relative;
+    right: 100px;
+}
+
+.profilePic img {
+    position: absolute;
+    top: -80px;
+    left: 20px;
+    padding-top: var(--LargeSpacing);
+}
+
+.oplysningerSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--DarkBeige);
+    border-radius: 5px;
+    box-shadow: var(--boxShadow);
+}
+/* personline oplysninger slut */
