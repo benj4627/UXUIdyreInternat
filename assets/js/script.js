@@ -2,7 +2,7 @@
 const parallaxImage = document.querySelector('.heroImgContainer img');
 let visibleAnimEl = document.querySelectorAll(".voresTeamContainerTop, .voresTeamContainerBottom");
 //Sætter en værdi for hvor langt man scroller før function aktiverer. 
-let scrollThreshold = 800;
+let scrollThreshold = 550;
 
 function toggleClassScroll() {
   //tilføjer eventListnere som lytter efter scroll-begivenheden. Når brugeren scroller siden, udføres funktionen.
