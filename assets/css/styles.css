@@ -465,9 +465,9 @@ input {
   }
 
 .profilePic{
-    transform: rotate(-6deg);
     position: relative;
-    right: 100px;
+    right: 80px;
+    margin-top: 5rem;
 }
 
 .profilePic img {
@@ -485,4 +485,15 @@ input {
     border-radius: 5px;
     box-shadow: var(--boxShadow);
 }
+
+.buttonChange {
+    transform: translate(30px, -20px);
+}
+
+.sletProfil {
+    font-size: 14px;
+    text-decoration: underline;
+    transform: translate(95px, -10px);
+}
+
 /* personline oplysninger slut */
