@@ -421,13 +421,19 @@ main {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    height: var(--LargeSpacing);
-    width: auto;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .typeAfOphold p {
     font-weight: bold;
     color: var(--PrimaryLightGreen);
+    text-align: center;
+    margin: unset;
 }
 
 /*opholdOversigt slutter*/
