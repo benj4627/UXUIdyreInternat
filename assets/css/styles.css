@@ -355,18 +355,18 @@ main {
 
 /*Start på trygt og kærligt ophold*/
 /*hero sektion*/
-.heroImgContainerTrygKærligtOphold {
-    transform: rotate(-6deg);
+
+.heroImgContainerTrygtKærligtOphold {
+    min-width: 545px;
+    min-height: 450px;
     position: relative;
     top: 130px;
     right: 100px;
-
-
 }
 
-.heroImgContainerTrygKærligtOphold img {
+.heroImgContainerTrygtKærligtOphold img {
     position: absolute;
-    top: -120px;
-    left: 35px;
+    top: -10px;
+    left: -50px;
     padding-top: var(--LargeSpacing);
 }
