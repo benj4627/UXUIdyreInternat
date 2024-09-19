@@ -471,7 +471,11 @@ padding: .5rem;
 margin-left: 45px;
 }
 
-
+.heartPositionTips {
+position: absolute;
+margin-left: 280px;
+margin-top: -450px;
+}
 
 
 
