@@ -413,6 +413,8 @@ header {
     top: 0;
     z-index: 10;
     background-color: var(--lightGreen);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
 
 .logo a {
@@ -664,3 +666,6 @@ input {
 /* mine dyr slut */
 
 /* personline oplysninger slut */
+/* footer start */
+
+/* footer slut */
