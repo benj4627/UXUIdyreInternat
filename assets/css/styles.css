@@ -370,3 +370,10 @@ main {
     left: -50px;
     padding-top: var(--LargeSpacing);
 }
+
+.opholdText {
+    font-size: 1.5rem;
+    width: 55ch;
+    line-height: 150%;
+    text-wrap: wrap;
+}
