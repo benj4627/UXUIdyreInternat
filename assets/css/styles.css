@@ -378,7 +378,7 @@ main {
     border-radius: 15px;
     margin-bottom: var(--LargeSpacing);
     padding-bottom: var(--smallSpacing);
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: var(--boxShadow);
 
 }
 
@@ -404,7 +404,6 @@ main {
 
 .CardOpholdH3 {
     padding-inline: 20px;
-    padding-bottom: 20px;
     padding-top: 10px;
     text-align: left;
 }
@@ -427,6 +426,7 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-left: 20px;
 }
 
 .typeAfOphold p {
