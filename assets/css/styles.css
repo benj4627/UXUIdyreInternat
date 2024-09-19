@@ -431,16 +431,18 @@ margin-top: -200px;
 }
 
 .tipCard {
-    background-image: url(/assets/images/tipsOgTricksBaggrund.png);
+    background-color: #FFF8E6;
+    border-radius: 30px;
     width: 336px;
     height: 452px;
-    color: #fff;
+    color: black;
+    box-shadow: var(--boxShadow);
 
 }
 
 .tipCard a {
 text-decoration: underline;
-color: #fff;
+color: black;
 }
 
 
