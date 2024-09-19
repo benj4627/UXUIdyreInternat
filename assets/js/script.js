@@ -2,6 +2,9 @@
 let parallaxImage = document.querySelector('.heroImgContainer img');
 let visibleAnimEl = document.querySelectorAll(".voresTeamContainerTop, .voresTeamContainerBottom");
 let visibleSlideAnimEl = document.querySelectorAll(".lokalNavSection, .oplysningerSection");
+let heartIcon = document.querySelector(".heartIcon");
+let outlineHeart = document.getElementById("outlineHeart");
+let filledHeart = document.getElementById("filledHeart");
 
 //Sætter en værdi for hvor langt man scroller før function aktiverer. 
 let scrollThreshold = 650;
@@ -44,3 +47,15 @@ function delayedAnimation() {
   
   // Kalder funktionen når siden loades
   delayedAnimation();
+
+
+  //funktion til at trykke på hjertet
+heartIcon.addEventListener("click", function() {
+    if (outlineHeart.style.display === "none") {
+        outlineHeart.style.display = "block";
+        filledHeart.style.display = "none";
+    } else {
+        outlineHeart.style.display = "none";
+        filledHeart.style.display = "block";
+    }
+});
