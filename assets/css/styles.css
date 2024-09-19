@@ -348,3 +348,128 @@ main {
 
 
 /* forside slut */
+
+/* Tips og tricks starter her */
+
+.heroImgTipContainer{
+    min-width: 545px;
+    min-height: 450px;
+    transform: rotate(-6deg);
+    position: relative;
+    top: 0px;
+    right: 100px;
+}
+
+.heroImgTipContainer img {
+    position: absolute;
+    top: 0px;
+    left: -70px;
+    padding-top: var(--LargeSpacing);
+}
+
+.filter {
+    position: absolute;
+background-image: url(/assets/images/filterBaggrund.png);
+left: 80px;
+width: 193px;
+height: 517px;
+}
+
+.filter p{
+color: #fff;
+font-weight: bold;
+margin-top: 50px;
+margin-left: 30px;
+}
+
+.filter input {
+    margin-left: 30px;
+}
+
+.filter label {
+color: #fff;
+}
+
+button {
+background-color: #FA8637;
+color: #fff;
+border-radius: 30px;
+padding: 10px 10px;
+}
+
+
+.nyhedsbrev { 
+background-image: url(/assets/images/nyhedsbrevBaggrund.png);
+width: 903px;
+height: 395px;
+display: flex;
+flex-direction: column;
+justify-content: center; /* Centrerer indholdet vertikalt */
+align-items: center; /* Centrerer indholdet horisontalt */
+color: white; /* Farven på teksten */
+margin: 100px auto;
+}
+
+.nyhedsbrev h2 {
+margin-bottom: 25px;
+}
+
+.nyhedsbutton {
+    position: absolute;
+margin-left: 550px;
+margin-top: -200px;
+
+
+
+}
+
+.tips6cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    
+}
+
+.tipCard {
+    background-image: url(/assets/images/tipsOgTricksBaggrund.png);
+    width: 336px;
+    height: 452px;
+    color: #fff;
+
+}
+
+.tipCard a {
+text-decoration: underline;
+color: #fff;
+}
+
+
+
+.boldTips {
+    font-weight: 700;
+    margin: 20px;
+   
+    }
+
+.broedtekstTips {
+margin: 20px;
+}
+
+.likes {
+    margin-left: 20px;
+    margin-right: 20px;
+display: flex;
+justify-content: space-between;
+margin-top: -20px;
+}
+
+.visTipsButton {
+margin-top: 30px;
+padding: .5rem;
+margin-left: 45px;
+}
+
+
+
+
+
