@@ -360,7 +360,7 @@ main {
     min-width: 545px;
     min-height: 450px;
     position: relative;
-    top: 130px;
+    top: 50px;
     right: 100px;
 }
 
@@ -376,4 +376,19 @@ main {
     width: 55ch;
     line-height: 150%;
     text-wrap: wrap;
+}
+
+/*daglig rutine*/
+.titleDagligRutine {
+    text-align: center;
+    padding-top: 5rem;
+}
+
+.textDagligRutine {
+    text-align: center;
+}
+
+.dagligRutineContainer {
+    background-image: url(/assets/images/boblerDagligRutine.png);
+
 }
