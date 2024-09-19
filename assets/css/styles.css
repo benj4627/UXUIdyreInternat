@@ -388,32 +388,81 @@ main {
     text-align: center;
 }
 
+
+.dagligRutineBobler {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 .dagligRutineContainer {
     background-image: url(/assets/images/boblerDagligRutine.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    height: 100%;
-    width: auto;
-
-}
-
-.dagligRutineBobler {
+    flex-grow: 1;
+    min-width: 200px;
+    max-width: 300px;
+    padding: 20px;
+    height: auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
 }
 
-margin-left: 20px;
-
-
-
-
-
-.typeAfOphold p {
+.titleBoldDagligRutine {
     font-weight: bold;
-    color: var(--PrimaryLightGreen);
-    text-align: center;
-    margin: unset;
+    color: white;
+}
+
+.dagligRutineContainer p {
+    color: white;
+}
+
+/*Pris sektion*/
+
+/*kollega sektion*/
+
+.teamsektion {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dyrepasser1 {
+    background-image: url(/assets/images/LeneBoble.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    flex-grow: 1;
+    min-width: 200px;
+    max-width: 300px;
+    padding: 20px;
+    height: auto;
+
+}
+
+.dyrepasser2 {
+    background-image: url(/assets/images/mikkelBoble.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    flex-grow: 1;
+    min-width: 200px;
+    max-width: 300px;
+    padding: 20px;
+    height: auto;
+}
+
+.dyrepasser3 {
+    background-image: url(/assets/images/sofieBoble.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    flex-grow: 1;
+    min-width: 200px;
+    max-width: 300px;
+    padding: 20px;
+    height: auto;
 }
