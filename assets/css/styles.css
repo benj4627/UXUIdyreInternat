@@ -453,6 +453,7 @@ main {
     max-width: 300px;
     padding: 20px;
     height: auto;
+
 }
 
 .dyrepasser3 {
@@ -465,4 +466,10 @@ main {
     max-width: 300px;
     padding: 20px;
     height: auto;
+
+}
+
+.DyrepasserContainer {
+    color: white;
+    text-align: center;
 }
