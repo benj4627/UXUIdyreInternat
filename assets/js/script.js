@@ -4,7 +4,7 @@ let visibleAnimEl = document.querySelectorAll(".voresTeamContainerTop, .voresTea
 let visibleSlideAnimEl = document.querySelectorAll(".lokalNavSection, .oplysningerSection");
 
 //Sætter en værdi for hvor langt man scroller før function aktiverer. 
-let scrollThreshold = 300;
+let scrollThreshold = 650;
 
 
 function toggleClassScroll() {

@@ -668,4 +668,55 @@ input {
 /* personline oplysninger slut */
 /* footer start */
 
+.footerContentContainer {
+    display: flex;
+    justify-content: space-between; 
+    align-items: top;
+    margin: 0 auto;
+    max-width: 1300px;
+}
+
+.footerContainer {
+    background-color: var(--lightGreen); 
+    color: var(--black);
+    padding-top: 5rem;
+    margin-top: 15em;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.footerContent { 
+    list-style-type: none; 
+}
+
+.footerContainer h2 {
+    margin: 0 auto;
+    max-width: 1300px;
+}
+
+.footerContent li {
+    margin-top: var(--smallSpacing);
+}
+
+.bold {
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+.footerContent.social li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--smallSpacing);
+    padding: 3rem 0rem;
+}
+
+.footerContent.social svg {
+    max-width: unset;
+    transition: .3s ease-in-out;
+}
+
+.footerContent.social svg:hover {
+    transform: scale(120%);
+}
 /* footer slut */
