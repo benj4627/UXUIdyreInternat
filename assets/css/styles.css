@@ -25,6 +25,7 @@
     margin: 0;
     padding: 0;
     font: inherit;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -54,18 +55,21 @@ h1 {
     font-family: "Anton", sans-serif;
     font-size: 4rem;
     font-weight: 400;
+    color: var(--black);
 }
 
 h2 {
     font-family: "Anton", sans-serif;
     font-size: 3rem;
     font-weight: 400;
+    color: var(--black);
 }
 
 h3 {
     font-family: "Anton", sans-serif;
     font-size: 2.3rem;
     font-weight: 400;
+    
 }
 
 p {
@@ -118,7 +122,7 @@ main {
     transform: rotate(-6deg);
     position: relative;
     top: 130px;
-    right: 100px;
+    right: 180px;
 }
 
 .heroImgContainer img {
@@ -292,6 +296,36 @@ main {
     margin-bottom: var(--LargeSpacing);
 }
 
+
+/* animationer */
+.slideinAnim {
+    opacity: 0; 
+    transition: opacity .5s ease-in-out, transform .5s ease-in-out; 
+    transform: translateY(100%); 
+}
+  
+.animationVisible {
+    opacity: 1; 
+    transform: translateY(0); 
+}
+
+.slideSideX {
+    opacity: 0; 
+    transition: opacity .5s ease-in-out, transform .5s ease-in-out; 
+    transform: translateX(100%); 
+}
+
+.slideSideY {
+    opacity: 0; 
+    transition: opacity .5s ease-in-out, transform .5s ease-in-out; 
+    transform: translateY(100%); 
+}
+  
+  .animationVisibleUp {
+    opacity: 1; 
+    transform: translateY(0); 
+  }
+
 /* vores team sektion slut */
 
 /* background shapes */
@@ -300,9 +334,9 @@ main {
     background-repeat: no-repeat;
     background-size: 100% auto;
     position: absolute;
-    top: 115%;
+    top: 130%;
     left: 0;
-    width: 40%;
+    width: 30%;
     height: 50%;
     z-index: -1;
 }
@@ -312,9 +346,34 @@ main {
     background-repeat: no-repeat;
     background-size: 100% auto;
     position: absolute;
-    top: 135%;
+    top: 145%;
     right: 0;
-    width: 38%;
+    width: 30%;
+    height: 35%;
+    z-index: -1;
+}
+
+.backgroundShapes3 {
+    background-image: url('data:image/svg+xml,%3Csvg xmlns%3D%22http%3A//www.w3.org/2000/svg%22 width%3D%22578%22 height%3D%22378%22 viewBox%3D%220 0 578 378%22 fill%3D%22none%22%3E%3Cpath d%3D%22M571.776 86.5327C615.325 204.077 420.478 127.577 276.324 180.985C132.171 234.393 -23.0958 461.248 -66.6453 343.704C-110.195 226.16 -96.521 95.8389 47.6325 42.4307C191.786 -10.9774 528.226 -31.0114 571.776 86.5327Z%22 fill%3D%22%23D0DCAE%22/%3E%3C/svg%3E');
+    background-repeat: no-repeat;
+    background-size: contain ;
+    position: absolute;
+    top: 140%;
+    left: 0;
+    width: 35%;
+    height: 30%;
+    z-index: -1;
+
+}
+
+.backgroundShapes4 {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22585%22%20height%3D%22353%22%20viewBox%3D%220%200%20585%20353%22%20fill%3D%22none%22%3E%0A%3Cpath%20d%3D%22M683.355%20306.576C661.772%20430.056%20531.977%20265.827%20380.544%20239.358C229.111%20212.888%20-19.2853%20330.659%202.29834%20207.179C23.8819%2083.6989%20101.336%20-21.9965%20252.769%204.47318C404.202%2030.9428%20704.939%20183.096%20683.355%20306.576Z%22%20fill%3D%22%23D0DCAE%22%2F%3E%0A%3C%2Fsvg%3E");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 32%;
     height: 30%;
     z-index: -1;
 }
@@ -331,7 +390,11 @@ main {
 
 .fep1Indhold img {
     border-radius: 10px;
-    width: 35vw;
+    width: 42vw;
+}
+
+.fep1Indhold svg {
+    margin-right: .5rem;
 }
 
 .bulletPointsFep {
@@ -347,8 +410,474 @@ main {
     font-weight: 700;
     margin-right: var(--LargeSpacing);
 }
-
 /* focused entry points forside slut */
+
+/* navigation */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: var(--lightGreen);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding: var(--smallSpacing);
+}
+
+.logo a {
+    font-family: "Anton", sans-serif;
+    font-size: 2rem;
+    transition: .3s ease-in-out;
+}
+
+.logo a:hover {
+    color: var(--LightOrange);
+    font-size: 2.1rem;
+}
+
+.navContainer {
+    max-width: 1340px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--smallSpacing);
+    padding: 2rem 0;
+}
+
+.navList ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.navList li, a {
+    list-style-type: none;
+    color: var(--black);
+    font-weight: 700;
+    padding-bottom: .2rem;
+    border-bottom: 3px solid rgba(0, 0, 0, 0);
+    transition: .3s ease-in-out;
+}
+
+.navList a:hover {
+    color: var(--LightOrange);
+    border-bottom: 3px solid #FA8637;
+}
+
+.navList svg {
+    height: 40px;
+    transition: .3s ease-in-out;
+    padding-bottom: .2rem;
+    border-bottom: 3px solid rgba(0, 0, 0, 0);
+}
+
+.navList svg:hover {
+    border-bottom: 3px solid #FA8637;
+}
+/* forside slut */
+
+/* personlige oplysninger start */
+.formContainer {
+    width: 35vw;
+    padding: var(--LargeSpacing);
+  }
+  
+.formGroup {
+    margin-bottom: var(--smallSpacing);
+  }
+  
+label {
+    font-weight: bold;
+    margin-bottom: .2rem;
+  }
+  
+.inputContainer {
+    display: flex;
+    align-items: center;
+    background-color: var(--LightBeige);
+    padding: .3rem;
+    border-radius: 5px;
+  }
+  
+  .mineDyrContainer input {
+    display: flex;
+    flex: 1;
+    border: none;
+    background-color: var(--LightBeige);
+    font-size: 1rem;
+    color: rgb(136, 134, 134);
+    padding: 5px;
+}
+
+.oplysningerTopContainer input {
+    display: flex;
+    flex: 1;
+    border: none;
+    background-color: var(--LightBeige);
+    font-size: 1rem;
+    color: rgb(136, 134, 134);
+    padding: 5px;
+}
+  
+.editIcon {
+    font-size: 1.2rem;
+    margin-right: .3rem;
+}
+
+.editIcon svg {
+    transition: .3s ease-in-out;
+}
+
+.editIcon svg:hover {
+    transform: scale(120%);
+}
+
+.profilePic{
+    position: relative;
+    right: 80px;
+    margin-top: 5rem;
+}
+
+.profilePic img {
+    position: absolute;
+    top: -80px;
+    left: 20px;
+    padding-top: var(--LargeSpacing);
+}
+
+.oplysningerTopContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+}
+.oplysningerSection {
+    background-color: var(--DarkBeige);
+    border-radius: 5px;
+    box-shadow: var(--boxShadow);
+    width: 73%;
+    height: fit-content;
+}
+
+.buttonChange {
+    transform: translate(30px, -20px);
+    transition: .3s ease-in-out;
+}
+
+.buttonChange:hover {
+    background-color: var(--DarkBeige);
+}
+
+.sletProfil {
+    font-size: 14px;
+    text-decoration: underline;
+    transform: translate(95px, -10px);
+}
+
+/* lokal nav start */
+.oplysningerContentContainer {
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+    margin-top: var(--LargeSpacing);
+}
+.lokalNavContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem;
+    background: var(--DarkBeige);
+    box-shadow: var(--boxShadow);
+    border-radius: 5px;
+    position: sticky;
+    top: 0;
+    z-index: 9;
+  }
+  
+.lokalNavUL {
+    list-style: none;
+  }
+  
+.lokalNavUL li {
+    margin-bottom: var(--smallSpacing);
+    padding: .5rem 2.5rem;
+    border: none;
+    background: var(--LightBeige);
+    color: var(--LightOrange);
+    transition: .3s ease-in-out;
+    border-radius: 5px;
+    border: 3px solid rgba(0, 0, 0, 0);
+    font-weight: 700;
+}
+
+.lokalNavUL a {
+    color: var(--LightOrange);
+}
+
+.lokalNavUL li:hover{
+    border: 3px solid var(--LightOrange);
+    background: var(--DarkBeige);
+    box-shadow: var(--boxShadow);
+}
+  
+#personalInfoButton {
+    background: var(--LightOrange);
+    color: white;
+    border: none;
+    transition: .2s ease-in-out;
+}
+  
+/* lokal nav slut */
+/* mine dyr */
+.mineDyrContainer .formContainer {
+    display: flex;
+    align-items: center;
+    gap: var(--smallSpacing);
+    margin-top: -2rem;
+    padding-top: unset;
+    padding-bottom: unset;
+}
+
+.mineDyrTitle {
+    margin-left: var(--LargeSpacing);
+}
+
+.mineDyrContainer svg {
+    max-width: unset;
+    transition: .3s ease-in-out;
+}
+
+.mineDyrContainer svg:hover {
+    transform: scale(120%);
+}
+
+.dyrPic{
+    position: relative;
+    margin-top: 5rem;
+}
+
+.dyrPic img {
+    position: absolute;
+    top: -70px;
+    left: 10px;
+    padding-top: var(--LargeSpacing);
+}
+
+.buttonDyr {
+    transform: translate(-15px, -20px);
+    transition: .3s ease-in-out;
+    padding: .2rem 2rem;
+}
+
+.buttonDyr:hover {
+    background-color: var(--DarkBeige);
+}
+
+.sletDyr {
+    font-size: 14px;
+    text-decoration: underline;
+    transform: translate(25px,-10px);
+}
+
+/* mine dyr slut */
+
+/* personline oplysninger slut */
+/* footer start */
+
+.footerContentContainer {
+    display: flex;
+    justify-content: space-between; 
+    align-items: top;
+    margin: 0 auto;
+    max-width: 1300px;
+}
+
+.footerContainer {
+    background-color: var(--lightGreen); 
+    color: var(--black);
+    padding-top: 5rem;
+    margin-top: 15em;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.footerContent { 
+    list-style-type: none; 
+}
+
+.footerContainer h2 {
+    margin: 0 auto;
+    max-width: 1300px;
+}
+
+.footerContent li {
+    margin-top: var(--smallSpacing);
+}
+
+.bold {
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+.footerContent.social li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--smallSpacing);
+    padding: 3rem 0rem;
+}
+
+.footerContent.social svg {
+    max-width: unset;
+    transition: .3s ease-in-out;
+}
+
+.footerContent.social svg:hover {
+    transform: scale(120%);
+}
+/* footer slut */
+
+
+/* forside slut */
+
+/* Tips og tricks starter her */
+
+/* Her er både herotekst og billede */
+.heroImgTipContainer{
+    min-width: 545px;
+    min-height: 450px;
+    transform: rotate(-6deg);
+    position: relative;
+    top: 0px;
+    right: 100px;
+}
+
+.heroImgTipContainer img {
+    position: absolute;
+    top: 0px;
+    left: -70px;
+    padding-top: var(--LargeSpacing);
+}
+
+/* Her starter den grønne boks med filter */
+.filter {
+position: absolute;
+background-image: url(../images/filterBaggrund.png);
+left: 80px;
+width: 193px;
+height: 517px;
+}
+
+.filter p{
+color: #fff;
+font-weight: bold;
+margin-top: 50px;
+margin-left: 30px;
+}
+
+.filter input {
+    margin-left: 30px;
+}
+
+.filter label {
+color: #fff;
+}
+
+.visTipsButton {
+    margin-top: 30px;
+    padding: .5rem;
+    margin-left: 45px;
+    }
+
+button {
+background-color: #FA8637;
+color: #fff;
+border-radius: 30px;
+padding: 10px 10px;
+}
+
+/* Her er nyhedsbrev */
+.nyhedsbrev { 
+background-image: url(/assets/images/nyhedsbrevBaggrund.png);
+width: 903px;
+height: 395px;
+display: flex;
+flex-direction: column;
+justify-content: center; /* Centrerer indholdet vertikalt */
+align-items: center; /* Centrerer indholdet horisontalt */
+color: white; /* Farven på teksten */
+margin: 100px auto;
+}
+
+.nyhedsbrev h2 {
+margin-bottom: 25px;
+color: white;
+}
+
+.nyhedsbutton {
+    position: absolute;
+margin-left: 550px;
+margin-top: -200px;
+
+
+
+}
+
+/* Her er et grid til de 6 cards */
+.tips6cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1000px;
+    margin-left: 200px;
+    
+}
+
+/* Her er reglerne for det enkelte card */
+.tipCard {
+    background-color: #FFF8E6;
+    border-radius: 30px;
+    width: 336px;
+    height: 452px;
+    color: black;
+    box-shadow: var(--boxShadow);
+
+}
+
+/* Her er reglerne for hjerterne på cards */
+.heartPositionTips {
+    position: absolute;
+    margin-left: 280px;
+    margin-top: -450px;
+    }
+
+/* Her bestemmes hvordan links skal se ud i cards */
+.tipCard a {
+text-decoration: underline;
+color: black;
+}
+
+
+/* Her er reglerne for overskrifter i cards */
+.boldTips {
+    font-weight: 700;
+    margin: 20px;
+   
+    }
+
+    /* Her er regler for brødtekst i cards */
+.broedtekstTips {
+margin: 20px;
+}
+
+/* Her er reglerne for likes og dato på cards */
+.likes {
+    margin-left: 20px;
+    margin-right: 20px;
+display: flex;
+justify-content: space-between;
+margin-top: -20px;
+}
 
 
 /* forside slut */
