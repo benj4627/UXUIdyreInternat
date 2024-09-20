@@ -2,7 +2,7 @@
 let parallaxImage = document.querySelector('.heroImgContainer img');
 let visibleAnimEl = document.querySelectorAll(".voresTeamContainerTop, .voresTeamContainerBottom");
 let visibleSlideAnimEl = document.querySelectorAll(".lokalNavSection, .oplysningerSection");
-let heartIcon = document.querySelector(".heartIcon");
+let heartIcons = document.querySelectorAll(".heartIcon");
 let outlineHeart = document.getElementById("outlineHeart");
 let filledHeart = document.getElementById("filledHeart");
 
@@ -51,17 +51,24 @@ function delayedAnimation() {
 
   //funktion til at trykke på hjertet
   //tilføjer click eventListener til heartIcon variabel
-heartIcon.addEventListener("click", function() {
-  //// Tjekker om outlineHeart er skjult
-    if (outlineHeart.style.display === "none") {
-       // Hvis skjult så skal det vises
+  heartIcons.forEach(function(heartIcon) {
+    // Tilføjer klik-event lytter til hvert hjerteikon
+    heartIcon.addEventListener("click", function() {
+      // Finder det tilhørende outline og fyldte hjerte indenfor samme container
+      const outlineHeart = heartIcon.querySelector(".outlineHeart");
+      const filledHeart = heartIcon.querySelector(".filledHeart");
+  
+      //// Tjekker om outlineHeart er skjult
+      if (outlineHeart.style.display === "none") {
+        // Hvis skjult så skal det vises
         outlineHeart.style.display = "block";
-         // Skjuler det fyldte hjerte
+        // Skjuler det fyldte hjerte
         filledHeart.style.display = "none";
-    } else {
-      //tjekker om outline hjerte er vist, hvis ja, så skjules det
+      } else {
+        // Tjekker om outline hjerte er vist, hvis ja, så skjules det
         outlineHeart.style.display = "none";
-        //viser det fyldte hjerte
+        // Viser det fyldte hjerte
         filledHeart.style.display = "block";
-    }
-});
+      }
+    });
+  });
