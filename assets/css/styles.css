@@ -296,6 +296,7 @@ main {
     margin-bottom: var(--LargeSpacing);
 }
 
+
 /* animationer */
 .slideinAnim {
     opacity: 0; 
@@ -324,6 +325,7 @@ main {
     opacity: 1; 
     transform: translateY(0); 
   }
+
 /* vores team sektion slut */
 
 /* background shapes */
@@ -375,6 +377,7 @@ main {
     height: 30%;
     z-index: -1;
 }
+
 /* background shapes slut */
 
 /* focused entry points forside */
@@ -876,3 +879,244 @@ justify-content: space-between;
 margin-top: -20px;
 }
 
+
+/* forside slut */
+
+/*Start på trygt og kærligt ophold*/
+/*hero sektion*/
+
+.heroImgContainerTrygtKærligtOphold {
+    min-width: 545px;
+    min-height: 450px;
+    position: relative;
+    top: 50px;
+    right: 100px;
+}
+
+.heroImgContainerTrygtKærligtOphold img {
+    position: absolute;
+    top: -10px;
+    left: -50px;
+    padding-top: var(--LargeSpacing);
+}
+
+.opholdText {
+    font-size: 1.5rem;
+    width: 55ch;
+    line-height: 150%;
+    text-wrap: wrap;
+}
+
+/*daglig rutine*/
+.titleDagligRutine {
+    text-align: center;
+    padding-top: 5rem;
+    max-width: unset;
+}
+
+.textDagligRutine {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 65ch;
+    font-size: 1.5rem;
+    margin-bottom: var(--LargeSpacing);
+    margin-top: var(--smallSpacing);
+    line-height: 150%;
+}
+
+.opholdButtonContainer {
+    margin: 0 auto;
+    max-width: 300px;
+}
+
+
+.dagligRutineBobler {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.dagligRutineContainer {
+    background-image: url(/assets/images/boblerDagligRutine.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    flex-grow: 1;
+    min-width: 200px;
+    max-width: 300px;
+    padding: 20px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titleBoldDagligRutine {
+    font-weight: bold;
+    color: white;
+    padding-bottom: 1rem;
+    border-bottom: 3px solid white;
+    margin-bottom: var(--smallSpacing);
+}
+
+.dagligRutineContainer p {
+    color: white;
+}
+
+/*Pris sektion*/
+.opholdBobbleTextBold {
+    font-weight: 700;
+}
+
+.bobbleTextMargin {
+    margin-left: 70px;
+}
+
+.trygtOpholdBobbleContainer {
+    color: white;
+    max-width: 25ch;
+    padding-top: 1rem;
+}
+
+.heroImgContainerTrygtKærligtOphold {
+    background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 width%3D%22355%22 height%3D%22368%22 viewBox%3D%220%200%20355%20368%22 fill%3D%22none%22%3E%3Cpath d%3D%22M347.695 164.606C381.195 274.606 292 376.606 95.1955 366.606C-17.7483 366.606 1.19527 229.104 1.19527 164.606C1.19527 100.109 71.6953 37.6944 216.695 8.60625C381.195 -24.3937 293.195 39.6063 347.695 164.606Z%22 fill%3D%22%23A9B489%22%2F%3E%3C%2Fsvg%3E');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+
+.heroImgContainerTrygtKærligtOphold2 {
+    background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 width%3D%22379%22 height%3D%22326%22 viewBox%3D%220%200%20379%20326%22 fill%3D%22none%22%3E%3Cpath d%3D%22M185.371 2.08805C307.072 -12.4369 405.805 81.6989 371.997 256.39C358.739 357.449 213.75 321.186 144.697 312.127C75.6448 303.068 17.0981 231.22 2.97635 97.3925C-13.0445 -54.4326 45.1456 33.2965 185.371 2.08805Z%22 fill%3D%22%237B946C%22%2F%3E%3C%2Fsvg%3E');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: fill;
+    height: 60vh;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    position: absolute;
+    top: 420px;
+    left: -300px;
+}
+
+
+.heroImgContainerTrygtKærligtOphold3 {
+    background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 width%3D%22367%22 height%3D%22323%22 viewBox%3D%220%200%20367%20323%22 fill%3D%22none%22%3E%3Cpath d%3D%22M202.522 316.716C92.6071 347.231 -9.31355 265.983 0.678677 86.7136C0.678681 -16.167 138.074 1.08876 202.522 1.08877C266.969 1.08877 329.335 65.3073 358.4 197.388C391.375 347.231 327.425 267.072 202.522 316.716Z%22 fill%3D%22%235E7153%22%2F%3E%3C%2Fsvg%3E');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 320px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    position: absolute;
+    top: 400px;
+    left: 250px;
+}
+
+.extraYdelserText {
+    width: 55ch;
+    line-height: 150%;
+    text-wrap: wrap;
+}
+
+.heroTextContainerMarginBottom {
+    margin-top: 10rem;
+}
+
+.bobbleContainer {
+    position: relative;
+    left: -160px;
+    top: -120px;
+    margin-top: 10rem;
+    margin-bottom: 14rem;
+}
+
+.svgOpholdContainer {
+    position: absolute;
+    right: 140px;
+    top: 60px;
+}
+
+
+.svgOpholdContainer2 {
+    position: absolute;
+    right: 250px;
+    top: 70px;
+}
+
+.svgOpholdContainer3 {
+    position: absolute;
+    right: 150px;
+    top: 20px;
+}
+
+/*kollega sektion*/
+
+.teamsektion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.DyrepasserContainer {
+    position: relative;
+    color: white;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    flex-grow: 1;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    box-sizing: border-box;
+}
+
+.dyrepasser1 {
+    background-image: url(/assets/images/LeneBoble.png);
+}
+
+.dyrepasser2 {
+    background-image: url(/assets/images/mikkelBoble.png);
+}
+
+.dyrepasser3 {
+    background-image: url(/assets/images/sofieBoble.png);
+}
+
+.DyrepasserContainer img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.DyrepasserContainer h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.DyrepasserContainer .navnContainer {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.DyrepasserContainer p {
+    margin-top: 15px;
+    line-height: 1.4;
+    font-size: 0.95em;
+    max-width: 30ch;
+}
