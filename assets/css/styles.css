@@ -436,6 +436,8 @@ margin-top: -200px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
+    max-width: 1000px;
+    margin-left: 200px;
     
 }
 
