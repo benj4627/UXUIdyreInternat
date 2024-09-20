@@ -326,6 +326,7 @@ main {
     transform: translateY(0); 
   }
 
+
 /* vores team sektion slut */
 
 /* background shapes */
@@ -961,6 +962,93 @@ margin-top: -20px;
     margin-bottom: var(--smallSpacing);
 }
 
+/* forside slut */
+
+
+
+
+/*opholdOversigt starter*/
+/*Hero sektion*/
+.heroImgContainerOpholdOversigt {
+    position: relative;
+    top: 0px;
+    right: 20px;
+    padding-bottom: var(--LargeSpacing);
+}
+
+.heroImgContainerOpholdOversigt img {
+    position: absolute;
+    top: 0px;
+    left: 35px;
+    padding-top: var(--LargeSpacing);
+}
+
+/*card til ophold oversigt*/
+.CardOphold {
+    background-color: var(--LightBeige);
+    border-radius: 15px;
+    margin-bottom: var(--LargeSpacing);
+    padding-bottom: var(--smallSpacing);
+    box-shadow: var(--boxShadow);
+
+}
+
+#h2HoldOversigt {
+    text-align: center;
+    padding-bottom: 35px;
+}
+
+.CardOpholdImg {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+#cardsSectionOphold {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    text-align: center;
+}
+
+.CardOpholdH3 {
+    padding-inline: 20px;
+    padding-top: 10px;
+    text-align: left;
+}
+
+.CardOpholdP {
+    padding-inline: 20px;
+    text-align: left;
+}
+
+
+.typeAfOphold {
+
+    background-image: url(/assets/images/Ellipse\ 20-kopi.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.typeAfOphold p {
+    font-weight: bold;
+    color: var(--PrimaryLightGreen);
+    text-align: center;
+    margin: unset;
+}
+
+/*opholdOversigt slutter*/
+=======
 .dagligRutineContainer p {
     color: white;
 }
@@ -1120,3 +1208,4 @@ margin-top: -20px;
     font-size: 0.95em;
     max-width: 30ch;
 }
+
