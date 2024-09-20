@@ -50,12 +50,18 @@ function delayedAnimation() {
 
 
   //funktion til at trykke på hjertet
+  //tilføjer click eventListener til heartIcon variabel
 heartIcon.addEventListener("click", function() {
+  //// Tjekker om outlineHeart er skjult
     if (outlineHeart.style.display === "none") {
+       // Hvis skjult så skal det vises
         outlineHeart.style.display = "block";
+         // Skjuler det fyldte hjerte
         filledHeart.style.display = "none";
     } else {
+      //tjekker om outline hjerte er vist, hvis ja, så skjules det
         outlineHeart.style.display = "none";
+        //viser det fyldte hjerte
         filledHeart.style.display = "block";
     }
 });
