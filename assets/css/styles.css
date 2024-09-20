@@ -351,6 +351,7 @@ main {
 
 /* Tips og tricks starter her */
 
+/* Her er både herotekst og billede */
 .heroImgTipContainer{
     min-width: 545px;
     min-height: 450px;
@@ -367,6 +368,7 @@ main {
     padding-top: var(--LargeSpacing);
 }
 
+/* Her starter den grønne boks med filter */
 .filter {
     position: absolute;
 background-image: url(/assets/images/filterBaggrund.png);
@@ -390,6 +392,12 @@ margin-left: 30px;
 color: #fff;
 }
 
+.visTipsButton {
+    margin-top: 30px;
+    padding: .5rem;
+    margin-left: 45px;
+    }
+
 button {
 background-color: #FA8637;
 color: #fff;
@@ -397,7 +405,7 @@ border-radius: 30px;
 padding: 10px 10px;
 }
 
-
+/* Her er nyhedsbrev */
 .nyhedsbrev { 
 background-image: url(/assets/images/nyhedsbrevBaggrund.png);
 width: 903px;
@@ -423,6 +431,7 @@ margin-top: -200px;
 
 }
 
+/* Her er et grid til de 6 cards */
 .tips6cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -430,6 +439,7 @@ margin-top: -200px;
     
 }
 
+/* Her er reglerne for det enkelte card */
 .tipCard {
     background-color: #FFF8E6;
     border-radius: 30px;
@@ -440,23 +450,33 @@ margin-top: -200px;
 
 }
 
+/* Her er reglerne for hjerterne på cards */
+.heartPositionTips {
+    position: absolute;
+    margin-left: 280px;
+    margin-top: -450px;
+    }
+
+/* Her bestemmes hvordan links skal se ud i cards */
 .tipCard a {
 text-decoration: underline;
 color: black;
 }
 
 
-
+/* Her er reglerne for overskrifter i cards */
 .boldTips {
     font-weight: 700;
     margin: 20px;
    
     }
 
+    /* Her er regler for brødtekst i cards */
 .broedtekstTips {
 margin: 20px;
 }
 
+/* Her er reglerne for likes og dato på cards */
 .likes {
     margin-left: 20px;
     margin-right: 20px;
@@ -465,17 +485,8 @@ justify-content: space-between;
 margin-top: -20px;
 }
 
-.visTipsButton {
-margin-top: 30px;
-padding: .5rem;
-margin-left: 45px;
-}
 
-.heartPositionTips {
-position: absolute;
-margin-left: 280px;
-margin-top: -450px;
-}
+
 
 
 
