@@ -296,7 +296,6 @@ main {
     margin-bottom: var(--LargeSpacing);
 }
 
-<<<<<<< Updated upstream
 /* animationer */
 .slideinAnim {
     opacity: 0; 
@@ -325,8 +324,6 @@ main {
     opacity: 1; 
     transform: translateY(0); 
   }
-=======
->>>>>>> Stashed changes
 /* vores team sektion slut */
 
 /* background shapes */
@@ -354,7 +351,6 @@ main {
     z-index: -1;
 }
 
-<<<<<<< Updated upstream
 .backgroundShapes3 {
     background-image: url('data:image/svg+xml,%3Csvg xmlns%3D%22http%3A//www.w3.org/2000/svg%22 width%3D%22578%22 height%3D%22378%22 viewBox%3D%220 0 578 378%22 fill%3D%22none%22%3E%3Cpath d%3D%22M571.776 86.5327C615.325 204.077 420.478 127.577 276.324 180.985C132.171 234.393 -23.0958 461.248 -66.6453 343.704C-110.195 226.16 -96.521 95.8389 47.6325 42.4307C191.786 -10.9774 528.226 -31.0114 571.776 86.5327Z%22 fill%3D%22%23D0DCAE%22/%3E%3C/svg%3E');
     background-repeat: no-repeat;
@@ -379,8 +375,6 @@ main {
     height: 30%;
     z-index: -1;
 }
-=======
->>>>>>> Stashed changes
 /* background shapes slut */
 
 /* focused entry points forside */
