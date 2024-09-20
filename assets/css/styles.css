@@ -497,7 +497,17 @@ label {
     border-radius: 5px;
   }
   
-input {
+  .mineDyrContainer input {
+    display: flex;
+    flex: 1;
+    border: none;
+    background-color: var(--LightBeige);
+    font-size: 1rem;
+    color: rgb(136, 134, 134);
+    padding: 5px;
+}
+
+.oplysningerTopContainer input {
     display: flex;
     flex: 1;
     border: none;
@@ -798,6 +808,7 @@ margin: 100px auto;
 
 .nyhedsbrev h2 {
 margin-bottom: 25px;
+color: white;
 }
 
 .nyhedsbutton {
