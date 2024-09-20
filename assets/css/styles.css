@@ -938,7 +938,7 @@ margin-top: -20px;
 }
 
 .dagligRutineContainer {
-    background-image: url(/assets/images/boblerDagligRutine.png);
+    background-image: url(../images/boblerDagligRutine.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -1087,15 +1087,15 @@ margin-top: -20px;
 }
 
 .dyrepasser1 {
-    background-image: url(/assets/images/LeneBoble.png);
+    background-image: url(../images/LeneBoble.png);
 }
 
 .dyrepasser2 {
-    background-image: url(/assets/images/mikkelBoble.png);
+    background-image: url(../images/mikkelBoble.png);
 }
 
 .dyrepasser3 {
-    background-image: url(/assets/images/sofieBoble.png);
+    background-image: url(../images/sofieBoble.png);
 }
 
 .DyrepasserContainer img {
